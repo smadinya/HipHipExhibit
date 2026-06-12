@@ -3,6 +3,7 @@ import { AnimatePresence } from "framer-motion";
 import Hero from "./components/Hero.jsx";
 import OriginSection from "./components/OriginSection.jsx";
 import WorldMap from "./components/WorldMap.jsx";
+import HistorySection from "./components/HistorySection.jsx";
 import CityPanel from "./components/CityPanel.jsx";
 import FundamentalsLab from "./components/FundamentalsLab.jsx";
 import Timeline from "./components/Timeline.jsx";
@@ -29,6 +30,7 @@ export default function App() {
       <Hero onBegin={scrollToMap} />
       <OriginSection />
       <WorldMap ref={mapRef} onSelect={setSelectedId} />
+      <HistorySection />
       <FundamentalsLab />
       <Timeline />
       <Sources />

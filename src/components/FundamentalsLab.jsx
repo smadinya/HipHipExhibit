@@ -1,6 +1,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import * as Tone from "tone";
 import { SONGS, RHYTHM_METER } from "../data/exhibit.js";
+import BeatMaker from "./BeatMaker.jsx";
 
 const byId = (id) => SONGS.find((s) => s.id === id);
 
@@ -516,6 +517,8 @@ export default function FundamentalsLab() {
         <SyncopationDemo audioReady={audioReady} owner={owner} />
         <CallResponseDemo audioReady={audioReady} />
       </div>
+
+      <BeatMaker audioReady={audioReady} owner={owner} />
     </section>
   );
 }
