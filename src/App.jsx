@@ -4,9 +4,11 @@ import Hero from "./components/Hero.jsx";
 import OriginSection from "./components/OriginSection.jsx";
 import WorldMap from "./components/WorldMap.jsx";
 import HistorySection from "./components/HistorySection.jsx";
+import ThemeSection from "./components/ThemeSection.jsx";
 import CityPanel from "./components/CityPanel.jsx";
 import FundamentalsLab from "./components/FundamentalsLab.jsx";
 import Timeline from "./components/Timeline.jsx";
+import CreativeOffering from "./components/CreativeOffering.jsx";
 import Sources from "./components/Sources.jsx";
 import { SONGS } from "./data/exhibit.js";
 
@@ -31,8 +33,10 @@ export default function App() {
       <OriginSection />
       <WorldMap ref={mapRef} onSelect={setSelectedId} />
       <HistorySection />
+      <ThemeSection />
       <FundamentalsLab />
       <Timeline />
+      <CreativeOffering />
       <Sources />
 
       <footer className="credit">
